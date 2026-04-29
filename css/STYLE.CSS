@@ -28,7 +28,7 @@ body {
 
 h1 {
     color: rgb(255, 255, 255);
-    margin-bottom: 20 px;
+    margin-bottom: 20px;
 }
 
 label {
@@ -83,10 +83,10 @@ label {
 }
 
 #btnIngresar {
-    margin-top: 10 px;
-    margin-bottom: 10 px;
+    margin-top: 10px;
+    margin-bottom: 10px;
     border-radius: 5px;
-    padding: 1opx;
+    padding: 10px;
     border: none;
     background-color: rgb(22, 57, 153);
     color: #e3ebee;

@@ -5,7 +5,7 @@ function login() {
 
     if (usuario == "admin" && contra == "123") {
         localStorage.setItem("usuario", usuario);
-        window.location.href = "../pages/principal.html";
+        window.location.href = "../pages/index.html";
     } else {
         divMensaje.innerHTML = "credenciales incorrectas";
         divMensaje.style.display = "inline-block";
