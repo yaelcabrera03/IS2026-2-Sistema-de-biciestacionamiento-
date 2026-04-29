@@ -1,5 +1,5 @@
 function login() {
-    let divMensaje = document.querySelector('#mensaje');
+    let divMensaje = document.querySelector('#msjLogin');
     let usuario = document.querySelectorAll('.entradaTexto')[0].value;
     let contra = document.querySelectorAll('.entradaTexto')[1].value;
 
@@ -7,7 +7,7 @@ function login() {
         localStorage.setItem("usuario", usuario);
         window.location.href = "../pages/index.html";
     } else {
-        divMensaje.innerHTML = "credenciales incorrectas";
+        divMensaje.innerHTML = "Credenciales incorrectas";
         divMensaje.style.display = "inline-block";
     }
 }
