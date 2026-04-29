@@ -1,6 +1,6 @@
 let usuario = localStorage.getItem("usuario");
 
-document.getElementById("mensaje").innerHTML = "Bienvenido usuario" + usuario;
+document.getElementById("mensaje").innerHTML = "Bienvenido usuario " + usuario;
 
 function cerrarSesion(){
     localStorage.removeItem("usuario");
