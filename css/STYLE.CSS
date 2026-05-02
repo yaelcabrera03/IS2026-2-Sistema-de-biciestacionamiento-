@@ -25,7 +25,7 @@ body {
     background-color: #e3ebee;
     width: 350px;
     padding: 30px;
-
+    margin: 20px;
     border-radius: 30px;
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
     display: flex;
@@ -44,7 +44,7 @@ label {
 }
 
 #logoBicicleta {
-    width: 60px;
+    width: 100px;
     margin: 0 auto 20px;
 }
 
@@ -54,15 +54,13 @@ label {
     border: none;
     border-bottom: 2px solid rgb(44, 56, 121);
     outline: none;
-}
-
-.entradaTexto {
     transition: 0.3s;
 }
 
+
 .entradaTexto:focus {
     border-bottom-color: blue;
-    transform: scale(1.5);
+    transform: scale(1.2);
 }
 
 .mensaje {
@@ -71,19 +69,17 @@ label {
     width: fit-content;
     color: white;
     text-align: center;
+    
 }
 
 #msjRegistro {
-    padding: 5px;
-    margin-top: 5px;
-    font-size: 14px;
-    color: blue;
-    border-radius: 5px;
-    width: auto;
-    margin-left: auto;
-    margin-right: auto;
+    font-family: Protest Guerrilla;
+    font-size: 60px;
 }
-
+#tituloPrincipal{
+    font-family: Protest Guerrilla;
+    font-size: 60px;
+}
 #btnIngresar {
     margin-top: 10px;
     margin-bottom: 10px;
@@ -161,6 +157,7 @@ button:hover {
     display: flex;
     flex-direction: row;
     height: auto;
+    
 }
 .opcion{
     height: 200px;
@@ -168,6 +165,9 @@ button:hover {
     margin: 30px;
     border-radius: 20px;
     background-color: #667a8d1a;
+    color: #296cc4;
+    font-weight: bold;
+    font-size: 20px;
     
 }
 .opcion:hover{
@@ -195,6 +195,29 @@ button:hover {
     width: 80%;
     height: auto;
 }
+
+
+#crearCuenta:hover{
+    background-color: rgb(67, 155, 67);
+}
+
+#formularioRegistro{
+    width: 350px;
+    padding: 20px;
+    background-color: #e3ebee;
+    border-radius: 30px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
+    display: flex;
+    flex-direction: column;
+}
+
+#infoEquipo{
+    color: #e3ebee;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: bold;
+}
 /* Aqui se encuentran las caracteristicas especificas que son mostradas cuando la pagina es mostrada 
     en un dispositivo movil
 */
@@ -220,6 +243,13 @@ button:hover {
         margin: 20px;
     }
     .seccion{
-        margin: 10px
+        margin: 10px;
+        padding: 10px;
+    }
+}
+@media (max-width : 1100px){
+    #listaOpciones{
+        flex-wrap: wrap;
+        align-items: center;
     }
 }
