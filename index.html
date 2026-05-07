@@ -4,29 +4,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/STYLE.CSS">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <title>SISTEMA DEL BIENESTAR</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+            <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Protest+Guerrilla&display=swap" rel="stylesheet">
-    <title>Index</title>
 </head>
 
 <body>
-    <!--<h1 id="bienvenida">Bienvenido al sistema</h1> -->
-    <div class="mensaje" id="msjBienvenida"></div>
-    <div id = "seccionPrincipal" class="seccion">
-        
-        <div id="listaOpciones">
-            <button class="opcion"> <img src="./assets/Blue_wallet.png"  class = "icon" alt=""> Balance</button>
-            <button class="opcion"> <img src="./assets/Blue_history.png"  class = "icon" alt=""> Historial</button>  
-            <button class="opcion"> <img src="./assets/Blue_settings.png"  class = "icon" alt=""> Configuracion</button>
-             <button id="opAyuda" class="opcion"> <img src="./assets/Blue_help.png"  class = "icon" alt=""> Ayuda</button>
-        </div> 
-       
-        <button id="cerrarSesion" class="botonGenerico">Cerrar sesión</button>
+    <h1 id="tituloPrincipal">Bici-estacionamiento</h1>
+    <img src="../assets/Bike_white.png" alt="Logo bicicleta" id="logoBicicleta">
+    <div  id = "infoEquipo">
+        <h2>Equipo: Los mentalistas 2.0</h2>
+        <h3>Integrantes del proyecto:</h3>
+        <ol>
+            <li>Acosta Fernández Juan Carlos </li>
+            <li>Cabrera Luna Yael</li>
+            <li>Leon Zarate Rubí Margarita</li>
+            <li>Pérez Hernández Carlos Alberto</li>
+            <li>Saldaña Ordoñez Daniela Vanessa</li>
+            <li>Salinas Ayala Eduardo Yael</li> 
+        </ol>
+    </div>
+    <div id="mensajeBienvenida"></div>
+    <div id ="msjLogin" class="mensaje"></div>
+    <div id="formularioInicio">
+        <label>Usuario</label>
+        <input type="text" placeholder="Ingresa tu usuario" class="entradaTexto">
+        <label>Contraseña</label>
+        <input type="password" placeholder="Ingresa tu contraseña" class="entradaTexto">
+        <button id="btnIngresar">Ingresar</button>
+        <a href="../pages/registro.html">¿No te haz registrado? Hazlo aqui</a>
+
     </div>
 
-    <script src="./js/script_principal.js"></script>
 </body>
+
+<script src="../js/script.js"></script>
 
 </html>
