@@ -8,7 +8,7 @@ function cerrarSesion(){
     window.location.href="../index.html";
 }
 function redirigirAyuda(){
-    window.location.href="./pages/QA.html";
+    window.location.href="./QA.html";
 }
 
 
