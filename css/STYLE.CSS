@@ -3,11 +3,14 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+:root{
+    --color-base : #296cc4;
+    --color-fondo: #e3ebee;
+    --elementos: #667a8d1a;
+}
 body {
     font-family: Arial;
-    background: #296cc4;
-
+    background-color: var(--color-base);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -20,6 +23,14 @@ body {
   font-weight: 400;
   font-style: normal;
 }
+.Roboto {
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
 
 #formularioInicio {
     background-color: #e3ebee;
@@ -31,14 +42,20 @@ body {
     display: flex;
     flex-direction: column;
 }
+#imagenPerfil{
+    width: 100px;
+    border-radius: 80px;
+    background-color: var(--elementos);
+    /*box-shadow:  4px 5px rgba(0, 0, 0, 0.2)*/
+}
 
 h1 {
     color: rgb(255, 255, 255);
     margin-bottom: 20px;
 }
 iframe{
-    width: 80%;
-    min-height: 200px;
+    width: 50%;
+    height: auto;
 }
 
 label {
@@ -137,15 +154,19 @@ button:hover {
 }
 .seccion{
     background-color: #e3ebee;
-    width: 95%;
+    width: 98%;
     gap: 20px;
     height: auto;
     padding: 30px;
-    border-radius: 30px;
+    margin: 10px;
+    border-radius: 20px;
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+#seccionCuenta{
+
 }
 #cerrarSesion{
     margin-top: auto;
@@ -172,7 +193,10 @@ button:hover {
     color: #296cc4;
     font-weight: bold;
     font-size: 20px;
-    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 .opcion:hover{
     
@@ -213,6 +237,7 @@ button:hover {
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
     display: flex;
     flex-direction: column;
+    margin-bottom: 30px;
 }
 
 #infoEquipo{
@@ -221,6 +246,90 @@ button:hover {
     flex-direction: column;
     align-items: center;
     font-weight: bold;
+    margin: 20px;
+}
+#opcionHeader{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 4px;
+    color: var(--color-base);
+    font-size: 16px;
+    font-weight: 600;
+}
+/*
+    Estilos de la Pagina de la cuenta.
+*/
+
+#headerCuenta{
+    width: 100vw;
+    max-width: 500px;
+    background-color: var(--color-fondo);
+    border-radius: 5px 5px 0px 0px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+#paginaCuenta{
+    justify-content: flex-start;
+    background-color: var(--color-base);
+}
+.opcionPerfil{
+    width: 98%;
+    display: flex;
+    flex-direction: row;
+    gap:4px;
+    justify-content: flex-start;
+    align-items: center;
+    color: var(--color-base);
+    border-bottom: 1px solid rgba(52, 54, 56, 0.507);
+    font-size: 16px;
+    font-weight: 600;
+
+}
+.opcionPerfil:hover{
+    background-color: #7eabe78f;
+}
+#nombrePerfil{
+    min-height: 30px;
+    width: auto;
+    min-width: 100px;
+    padding: 10px;
+    background-color: transparent;
+    border-radius: 10px;
+    color: var(--color-base);
+    font-family: Roboto;
+    font-weight: 900;
+    font-size: 24px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    
+}
+#seccionCuenta{
+    gap: 0px;
+    min-width: 100px;
+    width: 100vw;
+    height: 100vh;
+    max-width: 500px;
+    background-color: var(--color-fondo);
+    box-shadow: none;
+    margin: 0px;
+    border-radius: 0px 0px 5px 5px;
+    padding-top: 0px;
+}
+#informacionPerfil{
+    margin-top: 50px;
+    border: 1px solid gray;
+    width: 80%;
+    max-width: 300px;
+    border-radius: 7px;
+    box-shadow: none;
+}
+.iconoPequeno{
+    width: 20px;
+    height: 20px;
 }
 /* Aqui se encuentran las caracteristicas especificas que son mostradas cuando la pagina es mostrada 
     en un dispositivo movil
@@ -232,10 +341,12 @@ button:hover {
 #tituloSeccionAyuda{
     color: black;
     font-size: 80px;
+    width: auto;
 }
 .container{
     width: 100%;
     height: auto;
+    margin: 20px;
 }
 
 
@@ -271,7 +382,15 @@ button:hover {
     background-color: #787a7c27;
     transform: scale(1.15);
     transition: 0.1s;
-}
+    }
+
+    #paginaCuenta{
+        background-color: var(--color-fondo);
+    }
+    #seccionCuenta{
+        box-shadow: .5px 5px 5px rgba(128, 128, 128, 0.466);
+        height: auto;
+    }
 }
 @media (max-width : 1100px){
     #listaOpciones{

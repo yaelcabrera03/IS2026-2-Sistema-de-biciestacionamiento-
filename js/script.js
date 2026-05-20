@@ -21,10 +21,10 @@ let usuarioGuardado = localStorage.getItem("usuario");
 if (usuarioGuardado) {
     let div = document.getElementById("mensajeBienvenida");
 
-    if (div) {
+    /*if (div) {
         div.innerHTML = "Bienvenido " + usuarioGuardado;
         div.style.display = "block";
-    }
+    }*/
 }
 function logout() {
     localStorage.removeItem("usuario");
