@@ -13,6 +13,7 @@
 
 <body>
     <h1 id="msjRegistro" class="mensaje">Registro</h1>
+    <!--
     <div id="formularioRegistro">
         <label>Usuario</label>
         <input type="text" placeholder="Elige tu nombre de usuario" class="entradaTexto">
@@ -23,8 +24,17 @@
         <label>Confirma tu contraseña</label>
         <input type="password" placeholder="Vuelve a escribir tu contraseña para confirmarla" class="entradaTexto">
        
-        <button id="crearCuenta" class="botonGenerico">Crear cuenta</button>
+        <button type="button" id="crearCuenta" class="botonGenerico">Crear cuenta</button>
     </div>
+    -->
+    <form id="formularioRegistro" class="seccionRegistro">
+        <div id="contenedorInputs"></div>
+        <button type="button" id="btnRegistrar">Registrar</button>
+    </form>
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="../js/supabase.js"></script>
+    <script src="../js/script_registro.js"></script>
+    
 </body>
 
 </html>
