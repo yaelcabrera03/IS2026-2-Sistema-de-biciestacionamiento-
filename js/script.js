@@ -1,14 +1,31 @@
-function login() {
+async function login() {
     let divMensaje = document.querySelector('#msjLogin');
     let usuario = document.querySelectorAll('.entradaTexto')[0].value;
     let contra = document.querySelectorAll('.entradaTexto')[1].value;
 
-    if (usuario == "admin" && contra == "123") {
-        localStorage.setItem("usuario", usuario);
+    const { data, error } = await db
+        .from('Usuario')
+        .select('*')
+        .eq('correo', usuario)
+        .eq('password', contra);
+
+    if (error) {
+        divMensaje.innerHTML = "Error de conexión: " + error.message;
+        divMensaje.style.display = "inline-block";
+        divMensaje.style.color = "darkred";
+        return;
+    }
+
+    if (data.length > 0) {
+        localStorage.setItem("usuario", data[0].nombre); 
+        divMensaje.innerHTML = "Login correcto";
+        divMensaje.style.display = "inline-block";
+        divMensaje.style.color = "green";
         window.location.href = "./pages/principal.html";
     } else {
         divMensaje.innerHTML = "Credenciales incorrectas";
         divMensaje.style.display = "inline-block";
+        divMensaje.style.color = "darkred";
     }
 }
 
