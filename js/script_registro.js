@@ -1,8 +1,8 @@
 const campos = [
-    {name: 'nombre', label: 'Ingresa tu nombre', type:'text'},
-    {name: 'correo', label: 'Ingresa tu correo', type: 'email'},
-    {name: 'password', label: 'Ingresa tu contraseña', type: 'password'},
-    {name: 'edad', label: 'Ingresa tu edad', type: 'number'}
+    {name: 'nombre', label: 'Nombre', type:'text'},
+    {name: 'correo', label: 'Correo', type: 'email'},
+    {name: 'password', label: 'Contraseña', type: 'password'},
+    {name: 'edad', label: 'Edad', type: 'number'}
 ]
 
 const contenedor = document.getElementById('contenedorInputs');
@@ -15,8 +15,7 @@ campos.forEach((campo) => {
     input.type = campo.type;
     input.name = campo.name;
     input.id = campo.name;
-
-    input.classList.add('entradaTexto');
+    input.classList.add('entradaRegistro');
     
     contenedor.appendChild(label);
     contenedor.appendChild(input);
@@ -38,3 +37,8 @@ document.getElementById('btnRegistrar').addEventListener('click',async() =>{
             alert('Usuarion registrado correctamente');
         }
 })
+
+document.getElementById("opcionHeader").addEventListener("click",redirigirPrincipal);
+function redirigirPrincipal(){
+    window.location.href="../index.html";
+}

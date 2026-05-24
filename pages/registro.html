@@ -6,35 +6,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registro</title>
     <link rel="stylesheet" href="../css/STYLE.CSS">
-            <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Protest+Guerrilla&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Protest+Guerrilla&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="../js/modo_oscuro.js" defer></script>
+    <title>Document</title>
 </head>
 
-<body>
-    <h1 id="msjRegistro" class="mensaje">Registro</h1>
-    <!--
-    <div id="formularioRegistro">
-        <label>Usuario</label>
-        <input type="text" placeholder="Elige tu nombre de usuario" class="entradaTexto">
-        <label>Email</label>
-        <input type="text" placeholder="Escribe tu correo electronico" class="entradaTexto">
-        <label>Contraseña</label>
-        <input type="password" placeholder="Ingresa tu contraseña" class="entradaTexto">
-        <label>Confirma tu contraseña</label>
-        <input type="password" placeholder="Vuelve a escribir tu contraseña para confirmarla" class="entradaTexto">
-       
-        <button type="button" id="crearCuenta" class="botonGenerico">Crear cuenta</button>
-    </div>
-    -->
-    <form id="formularioRegistro" class="seccionRegistro">
+<body id="bodyRegistro" >
+    <header id="headerRegistro" class="header">
+        <button id="opcionHeader"><img class = "iconoPequeno" src="../assets/Blue_back_icon.png" alt="">Regresar</button>
+        <button id="cambiarTema">Modo Oscuro</button>
+    </header>
+    <section id="fondoRegistro" class="seccionFondo">
+        <h3 class="tituloInicio">Solicita tu cuenta</h3>
+        <form id="formularioRegistro" >
         <div id="contenedorInputs"></div>
-        <button type="button" id="btnRegistrar">Registrar</button>
+        <div class="checkList">
+            <div>
+                <input type="checkbox" name="" id="">
+                <label for="">Estoy de acuerdo con los <a href="">Terminos y condiciones.</a></label>
+            </div>
+            <div>
+                <input type="checkbox" name="" id="">
+                <label for="">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit, optio!.</label> 
+            </div>
+        </div>
+        <button class="botonGenerico" type="button" id="btnRegistrar">Solicitar</button>
+        
     </form>
+    </section>
+    <footer class="footer"></footer>
+    
     <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
     <script src="../js/supabase.js"></script>
     <script src="../js/script_registro.js"></script>
-    
+    <script></script>
 </body>
 
 </html>
