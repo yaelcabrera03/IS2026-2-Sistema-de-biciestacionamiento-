@@ -11,7 +11,7 @@
     --color--base--oscuro: #103e7a;
     --color--fondo--oscuro: #dae2e6;
     --color--base--transparente: #88b2e7;
-    --color--fondo--transparente:  #e3ebeea4;
+    --color--fondo--transparente:  #e3ebeecb;
     --color--texto-secundario: #296cc4;
     --color--texto-principal: #296cc4;
 }
@@ -91,10 +91,7 @@ label {
     margin-top: 10px;
     border-radius: 3px;
 }
-#bodyLogin{
-    /*background-image: url(../assets/Blur_background2.jpg);
-    background-size: cover;*/
-}
+
 #logoBicicleta {
     width: 100px;
     margin: 0 auto 20px;
@@ -195,9 +192,7 @@ button{
     flex-direction: column;
     align-items: center;
 }
-#seccionCuenta{
 
-}
 #cerrarSesion{
     margin-top: auto;
     margin-bottom: 20px;
@@ -427,9 +422,7 @@ button{
     align-items: flex-start;
     font-size: 18px;
 }
-.collapsable{
 
-}
 .contenido{
   padding: 15px;
   display: none;
