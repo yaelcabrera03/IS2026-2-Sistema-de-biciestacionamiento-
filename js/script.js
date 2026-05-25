@@ -47,3 +47,35 @@ function logout() {
     localStorage.removeItem("usuario");
     window.location.href = "../pages/principal.html";
 }
+
+var coll = document.getElementsByClassName("colapsable");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+} 
+let modoOscuro = localStorage.getItem('modoOscuro');
+const cambiar_tema = document.getElementById('cambiarTema');
+const activar = () => {
+    document.body.classList.add('modoOscuro');
+    localStorage.setItem('modoOscuro',"active");
+}
+const desactivar = () => {
+    document.body.classList.remove('modoOscuro');
+    localStorage.setItem('modoOscuro',null);
+}
+if(modoOscuro ==='active'){
+    activar();
+}
+cambiar_tema.addEventListener("click", ()=>{
+    modoOscuro = localStorage.getItem('modoOscuro');
+    modoOscuro !== "active" ? activar() : desactivar();
+})

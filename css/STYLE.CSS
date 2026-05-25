@@ -5,27 +5,29 @@
 }
 :root{
     --color-base : #296cc4;
-    --color-fondo: #e3ebee;
+    --color-fondo: #cdd8dd;
     --elementos: #667a8d1a;
     --color--base-claro: #6495d6;
     --color--base--oscuro: #103e7a;
-    --color--fondo--oscuro: #dae2e6;
+    --color--fondo--oscuro: #c3cdd3;
     --color--base--transparente: #88b2e7;
-    --color--fondo--transparente:  #e3ebeecb;
+    --color--fondo--transparente:  #e3ebeee5;
     --color--texto-secundario: #296cc4;
     --color--texto-principal: #296cc4;
+    --source--background: url("../assets/Blur_background_compressed.jpg");
 }
 .modoOscuro{
     --color-base : #296cc4;
     --color-fondo: #031020;
     --elementos: #667a8d1a;
-    --color--base-claro: #6495d6;
-    --color--base--oscuro: #103e7a;
-    --color--fondo--oscuro:#031020;
+    --color--base-claro: #416896;
+    --color--base--oscuro: #6994cc;
+    --color--fondo--oscuro:#010b16;
     --color--base--transparente: #88b2e7;
-    --color--fondo--transparente: #021225dc;
+    --color--fondo--transparente: #021225ea;
     --color--texto-secundario: #97a9c0;
     --color--texto-principal:#6495d6;
+    --source--background: url("../assets/Blur_background_compressed.jpg");
 
 }
 body {
@@ -59,21 +61,43 @@ body {
     margin-bottom: 8px;
     margin-right: 20px;
 }
+.link{
+    font-size: 16px;
+    font-weight: 400;
+}
 .footer{
     width: 100vw;
     height: 100px;
     border-top: 1px solid gray;
     background-color: var(--color--fondo--oscuro);
 }
-#formularioInicio {
-    background-color: #e3ebee;
-    width: 350px;
-    padding: 30px;
-    margin: 20px;
-    border-radius: 30px;
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
+#bodyLogin{
+    /**/
+    background-color: var(--color-fondo);
+    background-size: cover;
+    display: flex;
+    align-items: center;
+}
+#fondoLogin{
+    background-color: transparent;
+    min-width: 200px;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    max-width: 500px;
+    background-color: var(--color-fondo);
+}
+#formularioInicio {
+    font-family: 'Roboto';
+    font-weight: 700;
+    font-size: 22px;
+    color: var(--color--texto-principal);
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 30px;
+    min-width: 100px;
 }
 
 
@@ -96,21 +120,30 @@ label {
     width: 100px;
     margin: 0 auto 20px;
 }
-
+#seccionIndex{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: auto;
+    min-width: 200px;
+    background-color: var(--color-fondo);
+}
 .entradaTexto {
-    padding: 14px;
-    margin-bottom: 20px;
-    border: none;
-    border-radius: none;
-    border-bottom: 2px solid var(--color--base--oscuro);
-    outline: none;
-    transition: 0.3s;
+    border: 1.5px solid var(--color--base--transparente);
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 16px;
+    height: 50px;
+    padding: 10px;
+    background-color: var(--color-fondo);
+    color: var(--color--texto-secundario);
+    width: 100%;
 }
 
 
 .entradaTexto:focus {
-    border-bottom-color: blue;
-    transform: scale(1.2);
+    transform: scale(1.15);
+    transition: 0.1s;
 }
 
 .mensaje {
@@ -123,23 +156,29 @@ label {
 }
 
 #msjRegistro {
-    font-family: Protest Guerrilla;
     font-size: 60px;
 }
 #tituloPrincipal{
-    font-family: Protest Guerrilla;
-    font-size: 60px;
+    color: var(--color--texto-principal);
+    font-family: 'Roboto';
+    font-weight: 900;
+    font-size: 50px;
+    margin-top: 30px;
 }
 #btnIngresar {
-    margin-top: 10px;
-    margin-bottom: 10px;
-    border-radius: 5px;
+    margin-top: 20px;
+    margin-bottom: 30px;
     padding: 10px;
     border: none;
-    background-color: rgb(22, 57, 153);
-    color: #e3ebee;
+    border-radius: 0;
     cursor: pointer;
-    transition: 0.3s;
+    margin-left: auto;
+    margin-right: auto;
+    min-width: 100px;
+    height: 45px;
+    font-family: 'Roboto';
+    font-size: 18px;
+    font-weight: 600;
 }
 
 #btnIngresar:hover {
@@ -151,7 +190,7 @@ label {
     padding: 15px;
     margin: 20px auto;
     width: fit-content;
-
+    
     background: #2ecc71;
     color: white;
 
@@ -193,21 +232,22 @@ button{
     align-items: center;
 }
 
-#cerrarSesion{
-    margin-top: auto;
-    margin-bottom: 20px;
-    background-color: #e74c3c;
-    font-size: 18px;
-    height: 60px;
-}
+
 #cerrarSesion:hover{
     background: #921c0f;
+    color: var(--color-fondo);
 }
 #listaOpciones{
     display: flex;
     flex-direction: row;
     height: auto;
     
+}
+#seccionPrincipal{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    align-items: center;
 }
 .opcion{
     height: 200px;
@@ -231,8 +271,10 @@ button{
 }
 
 #msjBienvenida{
-    font-family: Protest Guerrilla;
+    font-family: 'Roboto';
+    font-weight: 900;
     font-size: 60px;
+    color: var(--color--texto-principal);
 }
 #msjLogin{
     padding: 12px 20px;
@@ -260,12 +302,12 @@ button{
     flex-direction: column;
 }
 #infoEquipo{
-    color: #e3ebee;
+    color: var(--color--texto-principal);
+    width: auto;
+    min-width: 100px;
+    border: 1px solid gray;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-weight: bold;
-    margin: 20px;
+    gap: 10px;
 }
 #opcionHeader{
     display: flex;
@@ -274,7 +316,7 @@ button{
     justify-content: center;
     gap: 4px;
     
-    color: var(--color-base);
+    color: var(--color--texto-principal);
     font-size: 16px;
     font-weight: 600;
     margin-bottom: 8px;
@@ -303,7 +345,7 @@ button{
     gap:4px;
     justify-content: flex-start;
     align-items: center;
-    color: var(--color-base);
+    color: var(--color--texto-principal);
     border-bottom: 1px solid rgba(52, 54, 56, 0.507);
     font-size: 16px;
     font-weight: 600;
@@ -319,7 +361,7 @@ button{
     padding: 10px;
     background-color: transparent;
     border-radius: 10px;
-    color: var(--color-base);
+    color: var(--color--texto-principal);
     font-family: Roboto;
     font-weight: 900;
     font-size: 24px;
@@ -416,7 +458,7 @@ button{
 .opcionQA{
     width: 100%;
     height: 50px;
-    color: var(--color-base);
+    color: var(--color--texto-principal);
     border: 1px solid gray;
     display: flex;
     align-items: flex-start;
@@ -424,11 +466,15 @@ button{
 }
 
 .contenido{
-  padding: 15px;
+  margin-top: 5px;
+  padding: 20px;
   display: none;
   overflow: hidden;
   border: 1px solid gray;
   border-radius: 8px;
+  color: var(--color--texto-principal);
+  font-weight: 500;
+  
 }
 #headerMenu{
     width: 100%;
@@ -449,7 +495,7 @@ button{
     font-size: 18px;
 }
 .botonHeaderMenu:focus{
-    color:var(--color--base--oscuro);
+    color:var(--color--texto-secundario);
     border-bottom: 2px solid var(--color--base--oscuro);
     transition: 0.5s;
 }
@@ -462,18 +508,18 @@ button{
 #bodyRegistro{
     justify-content:center;
     align-items: center;
-    background-image: url(../assets/Blur_background2.jpg);
+    background-image: var(--source--background);
     background-size: cover;
 }
 #headerRegistro{
     width: 100vw;
-    min-width: 400px;
+
     background-color: var(--color-fondo)
 }
 #fondoRegistro{
     width: 50vw;
     max-width: 550px;
-    min-width: 400px;
+    min-width: 300px;
     background-color: var(--color--fondo--transparente);
     flex-direction: column;
     align-items: center;
@@ -486,11 +532,12 @@ button{
     color: var(--color--texto-principal);
     width: 500px;
     padding: 20px;
-
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-bottom: 30px;
+    width: 100%;
+    min-width: 200px;
 }
 #contenedorInputs{
     width: 100%;
@@ -506,11 +553,16 @@ button{
 }
 .entradaRegistro{
     border: 1.5px solid var(--color--base--transparente);
+    font-family: 'Roboto';
+    font-weight: 500;
     height: 50px;
     padding: 10px;
     background-color: var(--color-fondo);
     color: var(--color--texto-secundario);
+    width: 100%
+
 }
+
 .entradaRegistro:focus{
     border: 2px solid var(--color--base--oscuro);
 
@@ -578,6 +630,17 @@ button{
     #formularioRegistro{
         font-weight: 600;
         font-size: 16px;
+    }
+    #msjBienvenida{
+        font-size: 45px;
+    }
+    #fondoLogin{
+        background-color: var(--color-fondo);
+        
+    }
+    #tituloPrincipal{
+        font-size: 40px;
+        text-wrap: initial;
     }
 }
 @media (max-width : 1100px){

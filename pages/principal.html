@@ -7,24 +7,30 @@
     <link rel="stylesheet" href="../css/STYLE.CSS">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Protest+Guerrilla&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Protest+Guerrilla&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="../js/modo_oscuro.js" defer></script>
     <title>Principal</title>
 </head>
 
 <body >
     <!--<h1 id="bienvenida">Bienvenido al sistema</h1> -->
-    
-    <div class="mensaje" id="msjBienvenida"></div>
-    <div id = "seccionPrincipal" class="seccion">
+    <header class="header">
+        <button id="cambiarTema">Modo Oscuro</button>
+    </header>
+    <section class="seccionFondo">
         
-        <div id="listaOpciones">
-            <button  id ="opcion_Cuenta" class="opcion"> <img src="../assets/Blue_Profile.png"  class = "icon" alt="">Mi cuenta</button>
-             <button id="opAyuda" class="opcion"> <img src="../assets/Blue_help.png"  class = "icon" alt=""> Ayuda</button>
-        </div> 
-       
-        <button id="cerrarSesion" class="botonGenerico">Cerrar sesión</button>
-    </div>
-
+        <section id="seccionPrincipal">
+            <div class="mensaje" id="msjBienvenida"></div>
+            <div id="listaOpciones">
+                <button  id ="opcion_Cuenta" class="opcion"> <img src="../assets/Blue_Profile.png"  class = "icon" alt="">Mi cuenta</button>
+                <button id="opAyuda" class="opcion"> <img src="../assets/Blue_help.png"  class = "icon" alt=""> Ayuda</button>
+                <button id="cerrarSesion"  class="opcion"> <img src="../assets/Blue_exit.png"  class = "icon" alt=""> Cerrar sesión</button>
+            </div> 
+            
+        </section>
+        
+    </section>
+    <footer class="footer"></footer>
     <script src="../js/script_principal.js"></script>
 </body>
 

@@ -1,8 +1,8 @@
 const campos = [
-    {name: 'nombre', label: 'Nombre', type:'text'},
-    {name: 'correo', label: 'Correo', type: 'email'},
-    {name: 'password', label: 'Contraseña', type: 'password'},
-    {name: 'edad', label: 'Edad', type: 'number'}
+    {name: 'nombre', label: 'Nombre', type:'text', placeholder:'Ingresa tu nombre'},
+    {name: 'correo', label: 'Correo', type: 'email', placeholder:'Ingresa tu correo electronico'},
+    {name: 'password', label: 'Contraseña', type: 'password', placeholder:'Ingresa tu contraseña'},
+    {name: 'edad', label: 'Edad', type: 'number', placeholder:'Ingresa tu edad'}
 ]
 
 const contenedor = document.getElementById('contenedorInputs');
@@ -15,6 +15,7 @@ campos.forEach((campo) => {
     input.type = campo.type;
     input.name = campo.name;
     input.id = campo.name;
+    input.placeholder = campo.placeholder;
     input.classList.add('entradaRegistro');
     
     contenedor.appendChild(label);
