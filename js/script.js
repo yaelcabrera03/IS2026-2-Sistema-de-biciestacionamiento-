@@ -24,7 +24,7 @@ async function login() {
         divMensaje.style.color = "green";
         const idRol = Number(localStorage.getItem("rol"));
         if(idRol == 3) window.location.href = "./pages/principal_administrador.html";
-        else window.location.href = "./pages/principal_administrador.html";
+        else window.location.href = "./pages/principal.html";
     } else {
         divMensaje.innerHTML = "Datos incorrectos";
         divMensaje.style.display = "inline-block";

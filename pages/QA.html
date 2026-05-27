@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="../css/STYLE.CSS">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Protest+Guerrilla&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Protest+Guerrilla&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <script type="text/javascript" src="../js/modo_oscuro.js" defer></script>
     <title>Preguntas frecuentes</title>
 </head>
@@ -22,25 +22,35 @@
         <section id="menuAyuda">
             <h2 class="tituloInicio"> ¿Cómo podemos ayudarte? </h2>
             <div id="headerMenu">
-                <button class="botonHeaderMenu">Preguntas frecuentes</button>
-                <button class="botonHeaderMenu">Contactanos</button>
+                <button id="botonFaqs" class="botonHeaderMenu">Preguntas frecuentes</button>
+                <button id="botonContacto" class="botonHeaderMenu">Contactanos</button>
             </div>
-            <button class="opcionQA colapsable">¿Como modificar datos de mi cuenta?</button>
-            <div class="contenido">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut cupiditate aliquid officia, temporibus nisi assumenda commodi iste soluta voluptatum harum cumque saepe beatae illum voluptatibus vitae, obcaecati sit aliquam consequatur.</p>
+            <div id="preguntasFrecuentes" class="contenedor activo">
+                <button class="opcionQA colapsable">¿Como modificar datos de mi cuenta?</button>
+                <div class="contenido">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut cupiditate aliquid officia, temporibus nisi assumenda commodi iste soluta voluptatum harum cumque saepe beatae illum voluptatibus vitae, obcaecati sit aliquam consequatur.</p>
+                </div>
+                <button class="opcionQA colapsable">¿Que puedo hacer en caso de un robo?</button>
+                <div class="contenido">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias at, voluptates distinctio cum expedita nemo? Tempore eligendi optio earum necessitatibus labore, vero facilis rem accusantium sint eum, esse cumque nobis? Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut cupiditate aliquid officia, temporibus nisi assumenda commodi iste soluta voluptatum harum cumque saepe beatae illum voluptatibus vitae, obcaecati sit aliquam consequatur.</p>
+                </div>
+                <button class="opcionQA colapsable">¿Como modificar mi contraseña?</button>
+                <div class="contenido">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut cupiditate aliquid officia, temporibus nisi assumenda commodi iste soluta voluptatum harum cumque saepe beatae illum voluptatibus vitae, obcaecati sit aliquam consequatur.</p>
+                </div>
+                <button class="opcionQA colapsable">¿Cuando caduca mi cuenta?</button>
+                <div class="contenido">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut cupiditate aliquid officia, temporibus nisi assumenda commodi iste soluta voluptatum harum cumque saepe beatae illum voluptatibus vitae, obcaecati sit aliquam consequatur.</p>
+                </div>
             </div>
-            <button class="opcionQA colapsable">¿Que puedo hacer en caso de un robo?</button>
-            <div class="contenido">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias at, voluptates distinctio cum expedita nemo? Tempore eligendi optio earum necessitatibus labore, vero facilis rem accusantium sint eum, esse cumque nobis? Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut cupiditate aliquid officia, temporibus nisi assumenda commodi iste soluta voluptatum harum cumque saepe beatae illum voluptatibus vitae, obcaecati sit aliquam consequatur.</p>
+            <div id="formularioQueja" class="contenedor">
+                <label for="">Asunto</label>
+                <input class="entradaTexto" type="text">
+                <label for="">Descripcion</label>
+                <textarea name=""  class="entradaTexto" id="inputDescripcion"></textarea>
+                <button id= "botonSolicitud" class="botonGenerico">Enviar</button>
             </div>
-            <button class="opcionQA colapsable">¿Como modificar mi contraseña?</button>
-            <div class="contenido">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut cupiditate aliquid officia, temporibus nisi assumenda commodi iste soluta voluptatum harum cumque saepe beatae illum voluptatibus vitae, obcaecati sit aliquam consequatur.</p>
-            </div>
-            <button class="opcionQA colapsable">¿Cuando caduca mi cuenta?</button>
-            <div class="contenido">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut cupiditate aliquid officia, temporibus nisi assumenda commodi iste soluta voluptatum harum cumque saepe beatae illum voluptatibus vitae, obcaecati sit aliquam consequatur.</p>
-            </div>
+            
         </section>
     </section>
     <footer class="footer">
