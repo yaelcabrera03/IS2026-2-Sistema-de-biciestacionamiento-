@@ -14,5 +14,10 @@ for (i = 0; i < coll.length; i++) {
 } 
 document.getElementById("opcionHeader").addEventListener("click",redirigirPrincipal);
 function redirigirPrincipal(){
-    window.location.href="principal.html";
+    const idRol = Number(localStorage.getItem("rol"));
+    if(idRol === 3){
+        window.location.href="principal_administrador.html";
+    }else{
+        window.location.href="principal.html";
+    }
 }

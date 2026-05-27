@@ -31,7 +31,8 @@
 
 }
 body {
-
+    background-color: var(--color-fondo);
+    overflow-x: hidden;
     font-family: Arial;
     background-color: var(--color-base);
     display: flex;
@@ -61,6 +62,15 @@ body {
     margin-bottom: 8px;
     margin-right: 20px;
 }
+.cambiarTema img:last-child{
+    display: none;
+}
+.modoOscuro .cambiarTema img:first-child{
+    display: none;
+}
+.modoOscuro .cambiarTema img:last-child{
+    display: block;
+}
 .link{
     font-size: 16px;
     font-weight: 400;
@@ -72,20 +82,22 @@ body {
     background-color: var(--color--fondo--oscuro);
 }
 #bodyLogin{
-    /**/
+    /* background-color: var(--color-fondo); */
     background-color: var(--color-fondo);
+    
+    
     background-size: cover;
     display: flex;
     align-items: center;
 }
 #fondoLogin{
-    background-color: transparent;
     min-width: 200px;
     display: flex;
     flex-direction: column;
     align-items: center;
     max-width: 500px;
     background-color: var(--color-fondo);
+    
 }
 #formularioInicio {
     font-family: 'Roboto';
@@ -115,7 +127,10 @@ label {
     margin-top: 10px;
     border-radius: 3px;
 }
-
+img{
+    width: 100%;
+    height: auto;
+}
 #logoBicicleta {
     width: 100px;
     margin: 0 auto 20px;
@@ -255,7 +270,7 @@ button{
     margin: 30px;
     border-radius: 20px;
     background-color: #667a8d1a;
-    color: #296cc4;
+    color: var(--color--texto-principal);
     font-weight: bold;
     font-size: 20px;
     display: flex;
@@ -280,11 +295,15 @@ button{
     padding: 12px 20px;
     margin: 20px;
     color: white;
-    background: #e74c3c;
-    border-radius: 15px;
+    border: 1.5px solid red;
+    background-color: red;
+    border-radius: 8px;
     text-align: center;
     display: none;
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.25);
+    font-family: 'Roboto';
+    font-weight: 800;
+    font-size: 20px;
+
 }
 .icon{
     width: 80%;
@@ -519,7 +538,7 @@ button{
 #fondoRegistro{
     width: 50vw;
     max-width: 550px;
-    min-width: 300px;
+    min-width: 350px;
     background-color: var(--color--fondo--transparente);
     flex-direction: column;
     align-items: center;
@@ -576,6 +595,40 @@ button{
     display: flex;
     flex-direction: column;
     gap: 10px;
+}
+/*
+    Aqui se encuentran todos los estilos del footer.
+*/
+.seccionFooter{
+    padding: 10px;
+    margin-left : 20px;
+    margin-right: 20px;
+}
+#logoFooter{
+    width: 0px;
+}
+
+/*
+    Aqui se encuentran todos los estilos de la pagina de datos personales
+*/
+.datosCuenta{
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-family: 'Roboto';
+    font-weight: 600;
+    color: var(--color--texto-principal);
+}
+.contenedorDatos{
+    font-family: 'Roboto';
+    margin-top: 5px;
+    background-color: var(--color--fondo--oscuro);
+    height: 40px;
+    padding: 10px;
+    color: var(--color--texto-secundario);
+    font-weight: 400;
+    border: 1.5px solid var(--color--base--transparente);
+    font-size: 14px;
 }
 @media (max-width: 600px){
     #listaOpciones{

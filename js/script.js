@@ -12,20 +12,23 @@ async function login() {
     if (error) {
         divMensaje.innerHTML = "Error de conexión: " + error.message;
         divMensaje.style.display = "inline-block";
-        divMensaje.style.color = "darkred";
+        //divMensaje.style.color = "darkred";
         return;
     }
 
     if (data.length > 0) {
-        localStorage.setItem("usuario", data[0].nombre); 
+        localStorage.setItem("usuario", data[0].nombre);
+        localStorage.setItem("rol",data[0].id_rol);
         divMensaje.innerHTML = "Login correcto";
         divMensaje.style.display = "inline-block";
         divMensaje.style.color = "green";
-        window.location.href = "./pages/principal.html";
+        const idRol = Number(localStorage.getItem("rol"));
+        if(idRol == 3) window.location.href = "./pages/principal_administrador.html";
+        else window.location.href = "./pages/principal_administrador.html";
     } else {
-        divMensaje.innerHTML = "Credenciales incorrectas";
+        divMensaje.innerHTML = "Datos incorrectos";
         divMensaje.style.display = "inline-block";
-        divMensaje.style.color = "darkred";
+        //divMensaje.style.color = "darkred";
     }
 }
 

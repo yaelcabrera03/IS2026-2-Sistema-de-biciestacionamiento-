@@ -6,7 +6,6 @@ const campos = [
 ]
 
 const contenedor = document.getElementById('contenedorInputs');
-
 campos.forEach((campo) => {
     const label = document.createElement('label');
     label.textContent = campo.label;
