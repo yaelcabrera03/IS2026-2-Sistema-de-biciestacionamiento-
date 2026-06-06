@@ -21,7 +21,6 @@ async function login() {
         localStorage.setItem("rol",data[0].id_rol);
         divMensaje.innerHTML = "Login correcto";
         divMensaje.style.display = "inline-block";
-        divMensaje.style.color = "green";
         const idRol = Number(localStorage.getItem("rol"));
         if(idRol == 3) window.location.href = "./pages/principal_administrador.html";
         else window.location.href = "./pages/principal.html";
