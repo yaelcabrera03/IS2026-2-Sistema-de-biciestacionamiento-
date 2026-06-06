@@ -145,6 +145,8 @@ img{
 }
 .entradaTexto {
     border: 1.5px solid var(--color--base--transparente);
+    margin-top: 10px;
+    margin-bottom: 10px;
     font-family: 'Roboto';
     font-weight: 500;
     font-size: 16px;
@@ -157,7 +159,7 @@ img{
 
 
 .entradaTexto:focus {
-    transform: scale(1.15);
+    transform: scale(1.05);
     transition: 0.1s;
 }
 
@@ -179,12 +181,12 @@ img{
     font-weight: 900;
     font-size: 50px;
     margin-top: 30px;
+    text-align: center;
 }
 #btnIngresar {
     margin-top: 20px;
     margin-bottom: 30px;
     padding: 10px;
-    border: none;
     border-radius: 0;
     cursor: pointer;
     margin-left: auto;
@@ -196,9 +198,6 @@ img{
     font-weight: 600;
 }
 
-#btnIngresar:hover {
-    background-color: rgb(49, 77, 155);
-}
 
 #mensajeBienvenida {
     display: none;
@@ -228,10 +227,17 @@ button{
 
 
 .botonGenerico{
-    background-color: var(--color-base);
-    color: #e3ebee;
+    background-color: var(--color--base--oscuro);
+    color: var(--color--texto-principal);
     cursor: pointer;
     transition: 0.3s;
+    border: 2px solid var(--color--base--transparente);
+    color: var(--color--texto-principal);
+    background-color: var(--color--fondo--oscuro);
+}
+.botonGenerico:hover{
+    background-color: var(--color-base);
+    color: var(--color-fondo);
 }
 .seccion{
     background-color: #e3ebee;
@@ -511,14 +517,51 @@ button{
 .botonHeaderMenu{
     border-radius: 0;
     color: var(--color--base-claro);
-    font-size: 18px;
+    font-size: 22px;
+    margin-bottom: 5px;
 }
 .botonHeaderMenu:focus{
     color:var(--color--texto-secundario);
     border-bottom: 2px solid var(--color--base--oscuro);
     transition: 0.5s;
 }
+.contenedor{
+    display: none;
+    width: 100%;
+    height: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    
+}
+.contenedor.activo{
+    display: block;
+}
+#formularioQueja{
+    width: 100%;
+    flex-direction: column;
+    font-family: 'Roboto';
+    color: var(--color--texto-principal);
+    font-size: 20px;
+    font-weight: 500;
+    padding: 5px;
+    
+}
+#inputDescripcion{
+    margin-top: 10px;
+    margin-bottom: 20px;
+    min-height: 150px;
+    height: auto;
+    display: block;
+}
+#botonSolicitud{
+    border-radius: 0;
+    width: 100px;
+    font-weight: 600;
+    font-size: 18px;
+    margin-left: auto;
+    margin-right: auto;
 
+}
 
 /*
     Estilos relacionados a la pagina de registro.

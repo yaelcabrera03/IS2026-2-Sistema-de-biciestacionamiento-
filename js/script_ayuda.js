@@ -21,3 +21,26 @@ function redirigirPrincipal(){
         window.location.href="principal.html";
     }
 }
+
+// 1. Seleccionamos los botones del menú
+const botonFaqs = document.getElementById('botonFaqs');
+const botonContacto = document.getElementById('botonContacto');
+
+// 2. Seleccionamos los contenedores de contenido
+const contenedorFaqs = document.getElementById('preguntasFrecuentes');
+const contenedorContacto = document.getElementById('formularioQueja');
+
+// 3. Función para activar "Preguntas Frecuentes"
+botonFaqs.addEventListener('click', () => {
+    // Mostramos el contenedor de FAQs y ocultamos el del Formulario
+    contenedorFaqs.classList.add('activo');
+    contenedorContacto.classList.remove('activo');
+});
+
+// 4. Función para activar "Contáctanos"
+botonContacto.addEventListener('click', () => {
+
+    // Mostramos el contenedor del Formulario y ocultamos el de FAQs
+    contenedorContacto.classList.add('activo');
+    contenedorFaqs.classList.remove('activo');
+});
