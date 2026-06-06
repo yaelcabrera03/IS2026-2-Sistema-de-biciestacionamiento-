@@ -27,7 +27,7 @@ async function login() {
     } else {
         divMensaje.innerHTML = "Datos incorrectos";
         divMensaje.style.display = "inline-block";
-        //divMensaje.style.color = "darkred";
+       
     }
 }
 
