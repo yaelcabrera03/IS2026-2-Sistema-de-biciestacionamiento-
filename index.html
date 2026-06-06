@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PIMAC</title>
+
+    <link rel="stylesheet" href="./css/STYLE.CSS">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Protest+Guerrilla&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<body id="bodyLogin">
+    <header class="header">
+        <button id="cambiarTema" class="cambiarTema">
+            <img class="iconoPequeno" src="./assets/Blue_darkMode.png" alt="">
+            <img class="iconoPequeno" src="./assets/Light_mode.png" alt="">
+        </button>
+        
+    </header>
+    
+    <section id="fondoLogin" class="seccionFondo">
+        
+            <h1 id="tituloPrincipal">Plataforma Integral de Movilidad y Acceso Ciclista</h1>
+            <div id="mensajeBienvenida"></div>
+            <button  id = "infoEquipo" class="colapsable"><img class = "iconoPequeno" src="./assets/Blue_arrow.png" alt="">Datos equipo 4</button>
+            <div class="contenido">
+                <h2>Los mentalistas 2.0</h2>
+                <h3>Integrantes:</h3>
+                <ol>
+                    <li> Acosta Fernández Juan Carlos </li>
+                    <li> Cabrera Luna Yael</li>
+                    <li> Leon Zarate Rubí Margarita</li>
+                    <li> Pérez Hernández Carlos Alberto</li>
+                    <li> Saldaña Ordoñez Daniela Vanessa</li>
+                    <li> Salinas Ayala Eduardo Yael</li> 
+                </ol>
+            </div>
+            
+            <div id="formularioInicio">
+                <label>Correo</label>
+                <input type="text" placeholder="Ingresa tu correo" class="entradaTexto">
+                <label>Contraseña</label>
+                <input type="password" placeholder="Ingresa tu contraseña" class="entradaTexto">
+                <div id ="msjLogin" class="mensaje"></div>
+                <button type="button" id="btnIngresar" class="botonGenerico">Ingresar</button>
+                <a class="link" href="pages/registro.html">¿Aún no tienes tu cuenta? Solicita aquí</a>
+
+            </div>
+    </section>
+    
+    
+    
+    <footer class="footer">
+        <section id="logoFooter" class="seccionFooter"> <img src="./assets/Blue_bike.png" alt=""></section>
+    </footer>
+</body>
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="js/supabase.js"></script>
+<script src="js/script.js"></script>
+
+</html>

@@ -6,11 +6,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registro</title>
     <link rel="stylesheet" href="../css/STYLE.CSS">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Protest+Guerrilla&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="../js/modo_oscuro.js" defer></script>
+    <title>Document</title>
 </head>
 
-<body>
-    <h1>Registro</h1>
-
+<body id="bodyRegistro" >
+    <header id="headerRegistro" class="header">
+        <button id="opcionHeader"><img class = "iconoPequeno" src="../assets/Blue_back_icon.png" alt="">Regresar</button>
+        <button id="cambiarTema" class="cambiarTema">
+            <img class="iconoPequeno" src="../assets/Blue_darkMode.png" alt="">
+            <img class="iconoPequeno" src="../assets/Light_mode.png" alt="">
+        </button>
+    </header>
+    <section id="fondoRegistro" class="seccionFondo">
+        <h3 class="tituloInicio">Solicita tu cuenta</h3>
+        <form id="formularioRegistro" >
+        <div id="contenedorInputs"></div>
+        <div class="checkList">
+            <div>
+                <input type="checkbox" name="" id="">
+                <label for="">Estoy de acuerdo con los <a href="">Terminos y condiciones.</a></label>
+            </div>
+            <div>
+                <input type="checkbox" name="" id="">
+                <label for="">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit, optio!.</label> 
+            </div>
+        </div>
+        <button class="botonGenerico" type="button" id="btnRegistrar">Solicitar</button>
+        
+    </form>
+    </section>
+    <footer class="footer">
+        <section id="logoFooter" class="seccionFooter"> <img src="../assets/Blue_bike.png" alt=""></section>
+    </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="../js/supabase.js"></script>
+    <script src="../js/script_registro.js"></script>
+    <script></script>
 </body>
 
 </html>

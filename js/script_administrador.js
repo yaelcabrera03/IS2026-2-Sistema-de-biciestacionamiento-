@@ -1,21 +1,21 @@
+document.getElementById("gestionar").addEventListener("click",redirigirGestion);
+function redirigirGestion(){
+    window.location.href="gestion.html";
+}
 let usuario = localStorage.getItem("usuario");
-
 document.getElementById("msjBienvenida").innerHTML = "Bienvenido, " + usuario +".";
 document.getElementById("cerrarSesion").addEventListener("click",cerrarSesion);
 document.getElementById("opAyuda").addEventListener("click",redirigirAyuda);
-document.getElementById("opcion_Cuenta").addEventListener("click",redirigirCuenta)
+document.getElementById("opcion_Cuenta").addEventListener("click",redirigirCuenta);
 
 function cerrarSesion(){
     localStorage.removeItem("usuario");
     window.location.href="../index.html";
 }
 function redirigirAyuda(){
+    
     window.location.href="QA.html";
 }
 function redirigirCuenta(){
     window.location.href = "cuenta.html";
 }
-
-
-
-
